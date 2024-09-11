@@ -1,7 +1,7 @@
 #include <iostream>
 #include "include/task.h"
 
-using namespace std;
+//using namespace std;
 int main()
 {
   int Upspeed, Downspeed, Desiredheight;

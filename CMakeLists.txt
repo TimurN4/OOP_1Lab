@@ -30,6 +30,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_li
 enable_testing()
 
 add_executable(tests test/tests01.cpp)
+#add_executable(tests test/)
 target_link_libraries(tests ${CMAKE_PROJECT_NAME}_lib gtest_main)
 
 # Добавление тестов в тестовый набор

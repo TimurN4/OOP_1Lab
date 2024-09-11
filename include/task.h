@@ -1,3 +1,3 @@
 #pragma once
 
-int task(int UpSpeed, int DownSpeed, int DesiredHeight);
+int task(double UpSpeed, double DownSpeed, double DesiredHeight);
