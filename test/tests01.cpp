@@ -3,52 +3,92 @@
 
 TEST(basic_test_set, test01)
 {
-    ASSERT_TRUE(task(100,10, 910) == 10);
+    double upspeed = 100;
+    double downspeed = 10;
+    double desired = 910;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == 10);
 }
 
 TEST(basic_test_set, test_02)
 {
-    ASSERT_TRUE(task(1, 0.5, 1) == 1);
+    double upspeed = 1;
+    double downspeed = 0.5;
+    double desired = 1;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == 1);
 }
 
 TEST(basic_test_set, test_03)
 {
-    ASSERT_TRUE(task(1, 0.5, 2) == 3);
+    double upspeed = 1;
+    double downspeed = 0.5;
+    double desired = 2;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == 3);
 }
 
 TEST(basic_test_set, test_04)
 {
-    ASSERT_TRUE(task(2, 1, 3) == 2);
+    double upspeed = 2;
+    double downspeed = 1;
+    double desired = 3;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == 2);
 }
 
 TEST(basic_test_set, test_05)
 {
-    ASSERT_TRUE(task(0.5, 0.25, 1) == 3);
+    double upspeed = 0.5;
+    double downspeed = 0.25;
+    double desired = 1;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == 3);
 }
 
 TEST(basic_test_set, test_06)
 {
-    ASSERT_TRUE(task(1, 1, 1) == 1);
+    double upspeed = 1;
+    double downspeed = 1;
+    double desired = 1;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == 1);
 }
 
 TEST(basic_test_set, test_07)
 {
-    ASSERT_TRUE(task(0, 0.5, 1) == -1);
+    double upspeed = 0;
+    double downspeed = 0.5;
+    double desired = 1;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == -1);
 }
 
 TEST(basic_test_set, test_08)
 {
-    ASSERT_TRUE(task(1, 0, 1000) == 1000);
+    double upspeed = 1;
+    double downspeed = 0;
+    double desired = 1000;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == 1000);
 }
 
 TEST(basic_test_set, test_09)
 {
-    ASSERT_TRUE(task(1, 0.5, 0) == 0);
+    double upspeed = 1;
+    double downspeed = 0.5;
+    double desired = 0;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == 0);
 }
 
 TEST(basic_test_set, test_10)
 {
-    ASSERT_TRUE(task(1, 0.5, -1) == -1);
+    double upspeed = 1;
+    double downspeed = 0.5;
+    double desired = -1;
+    int result = task(upspeed, downspeed, desired);
+    ASSERT_TRUE(result == -1);
 }
 
 int main(int argc, char **argv) {
